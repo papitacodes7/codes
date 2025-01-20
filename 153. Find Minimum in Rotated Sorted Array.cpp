@@ -9,6 +9,10 @@ public:
         while (low <= high) { 
             int mid = (low + high) / 2; // Array ka beech wala index nikalte hain
 
+            if(arr[low] <= arr[high]){ // agar arr sorted so pick the start no?
+                ans = min(ans,arr[low]);
+                break;
+            }
             // Agar left half sorted hai
             if (arr[low] <= arr[mid]) {
                 ans = min(ans, arr[low]); // Left half ka sabse chhota element compare karte hain
