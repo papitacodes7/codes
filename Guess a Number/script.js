@@ -88,20 +88,6 @@ function endGame() {
   newGame(); // Naya game start karne ka function call karna
 }
 
-// Naya game start karne ka function
-// function newGame() {
-//   const newGameButton = document.querySelector('#newGame');
-//   newGameButton.addEventListener('click', function (e) {
-//     randomNumber = parseInt(Math.random() * 100 + 1); // Naya random number generate karna
-//     prevGuess = []; // Pichle guesses reset karna
-//     numGuess = 1; // Guess count reset karna
-//     guessSlot.innerHTML = ''; // Pichle guesses hatana
-//     remaining.innerHTML = `${11 - numGuess} `; // Remaining guesses reset karna
-//     userInput.removeAttribute('disabled'); // Input enable karna
-//     startOver.removeChild(p); // New game button hatana
-//     playGame = true; // Game wapas start kar dena
-//   });
-// }
 function newGame() {
   const newGameButton = document.querySelector('#newGame');
   newGameButton.addEventListener('click', function () {
