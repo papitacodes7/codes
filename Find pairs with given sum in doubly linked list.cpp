@@ -37,15 +37,12 @@ int main() {
     head->next->next->next->next = createNode(5);
     head->next->next->next->next->prev = head->next->next->next;
 
-    // Find pairs with sum 5
-    vector<pair<int, int>> pairs = findPairs(head, 5);
-
     // Print the pairs
     printPairs(pairs);
 
     return 0;
 }
 
-//comments-
+comments-
 // This code defines a doubly linked list and finds pairs of nodes that sum to a given value.
 // The function `findPairs` takes the head of the list and the target sum as input and returns a vector of pairs.
