@@ -43,6 +43,6 @@ int main() {
     return 0;
 }
 
-comments-
+//comments-
 // This code defines a doubly linked list and finds pairs of nodes that sum to a given value.
 // The function `findPairs` takes the head of the list and the target sum as input and returns a vector of pairs.
