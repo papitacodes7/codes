@@ -80,3 +80,52 @@ int main() {
   cout << "stack's top element: " << s.stackPeek() << "\n"; // Peek top
   return 0;
 }
+
+/*class Stack {
+    // Pointer to the top element of the stack
+    Node* top;
+
+    // Keeps track of the number of elements in the stack
+    int size;
+
+public:
+    // Constructor to initialize the stack
+    Stack() {
+        top = nullptr;
+        size = 0;
+    }
+
+    // Returns the current size of the stack
+    int getSize() {
+        return size;
+    }
+
+    // Checks if the stack is empty
+    bool isEmpty() {
+        return top == nullptr;
+    }
+
+    // Pushes a new element onto the stack
+    void push(int data) {
+        Node* newNode = new Node(data); // Create a new node with given data
+        newNode->next = top;            // Point new node to current top
+        top = newNode;                  // Update top to new node
+        size++;                         // Increment stack size
+    }
+
+    // Pops the top element from the stack
+    void pop() {
+        if (top == nullptr) return;     // Do nothing if stack is empty
+        Node* temp = top;               // Store the top node
+        top = top->next;                // Move top to the next node
+        delete temp;                    // Delete old top node
+        size--;                         // Decrement stack size
+    }
+
+    // Returns the data of the top element without removing it
+    int getTop() {
+        if (top == nullptr) return -1;  // Return -1 if stack is empty
+        return top->data;               // Return top element's data
+    }
+};
+*/
