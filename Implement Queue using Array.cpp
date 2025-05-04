@@ -73,3 +73,32 @@ int main() {
 
   return 0;
 }
+
+/*class Queue {
+
+    int front, rear;          // Indices to track the front and rear of the queue
+    vector<int> arr;          // Dynamic array to store queue elements
+
+public:
+    // Constructor: initializes front and rear, and resizes the array to hold up to 100001 elements
+    Queue()
+    {
+        front = 0;
+        rear = 0;
+        arr.resize(100001);
+    }
+
+    // Enqueue: Adds element 'e' to the end (rear) of the queue
+    void enqueue(int e)
+    {
+        arr[rear++] = e;  // Insert at rear index, then increment rear
+    }
+
+    // Dequeue: Removes and returns the front element of the queue
+    int dequeue()
+    {
+        if (front == rear) return -1; // Queue is empty if front equals rear
+        return arr[front++];          // Return element at front and move front forward
+    }
+};
+*/
