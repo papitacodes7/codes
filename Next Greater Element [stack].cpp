@@ -49,3 +49,47 @@ int main() {
     } 
     cout << endl;
 }
+
+
+// LeetCode
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    vector<int> nextGreaterElement(vector<int>& nums1, vector<int>& nums2) {
+        unordered_map<int, int> ngeMap; // Store next greater for each number in nums2
+        stack<int> st;
+
+        // Build the map for next greater elements in nums2
+        for (int i = nums2.size() - 1; i >= 0; i--) {
+            int current = nums2[i];
+
+            // Maintain decreasing stack
+            while (!st.empty() && st.top() <= current) {
+                st.pop();
+            }
+
+            // If stack is empty, no greater element
+            if (st.empty()) {
+                ngeMap[current] = -1;
+            } else {
+                ngeMap[current] = st.top();
+            }
+
+            st.push(current);
+        }
+
+        // Prepare result using the map for elements in nums1
+        vector<int> result;
+        for (int num : nums1) {
+            result.push_back(ngeMap[num]);
+        }
+
+        return result;
+    }
+};
+
+
+
+
