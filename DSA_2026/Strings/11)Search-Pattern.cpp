@@ -64,5 +64,15 @@ class Solution {
 // IMMPORTANT
 // IMMPORTANT
 
+// Time Complexity:
+// Average Case: O(n + m)
+// Worst Case: O(n * m)
+//
+// Space Complexity: O(1)
+
+
+// yaha se KMP krna he..
+
+
 
 
