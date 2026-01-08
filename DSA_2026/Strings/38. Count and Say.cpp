@@ -23,7 +23,7 @@ string countAndSay(int n) {
 }
 };
 
-
+// leetcode ka ques. he..
 //so basically we want ki let's say koi bhi n dede like 4 so we want to return 4th thing after counting how many times that number occur in a certain way like for example starting value toh 1 he so one times one which is 11 this is the first iteration second would be 21 because do baar one aaya... third time it'll be 1211.. which will be our answer but the thing is while loop fir --n tk chalana pdega yaa toh 1 se start krna pdega for loop..
 
 
