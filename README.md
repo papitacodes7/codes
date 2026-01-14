@@ -1,20 +1,22 @@
 # Codes Repository
 
-Welcome to the `codes` repository! This is a collection of random code snippets, experiments, and projects that I'm working on. Feel free to explore, contribute, or suggest improvements.
+Welcome to the `codes` repository.  
+This repository contains a collection of code snippets, practice problems, and small experiments that I work on while learning programming.
 
-## Table of Contents
-- [Overview](#overview)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+---
 
 ## Overview
-This repository is a personal playground for coding experiments and solutions. You'll find a variety of code snippets from different programming languages and domains. These could be anything from algorithm solutions, small utility scripts, or even some larger projects.
+This is a personal repository where I store:
+- Algorithm and DSA solutions  
+- Practice code from different topics  
+- Small experiments and learning projects  
+
+The focus of this repository is learning and improvement.
+
+---
 
 ## Installation
-To use any of the code snippets, simply clone the repository:
+Clone the repository using:
 
 ```sh
 git clone https://github.com/papitacodes7/codes.git
