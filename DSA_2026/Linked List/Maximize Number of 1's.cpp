@@ -40,6 +40,8 @@ int main() {
     return 0;
 }
 
+//ez
+
 //Hum ek sliding window maintain karte hain
 
 // Right pointer se window ko expand karte hain
