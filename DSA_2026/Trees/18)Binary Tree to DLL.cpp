@@ -87,4 +87,8 @@ int main() {
 }
 
 
+//so basically like isme LNR use hua he that is inorder traversal and like wohi ki prev ka right set as root and root ka left set as prev if it's a node in between warna basically head banana pdega jo first node hoga..
+
+
+
 //The intuition behind converting a Binary Tree to a Doubly Linked List lies in performing a standard Inorder Traversal (Left-Root-Right) to preserve the linear sequence of nodes. By maintaining a prev pointer that tracks the last visited node, we can dynamically reassign the tree's left and right pointers to act as previous and next links in a DLL. As we reach each node, we link it to the prev node and move the prev pointer forward, effectively "flattening" the tree structure into a linked chain without allocating extra nodes. The Time Complexity is O(N) because every node is visited exactly once, while the Space Complexity is O(H), where H is the height of the tree, representing the maximum depth of the recursion stack (which becomes O(N) in the case of a skewed tree).
