@@ -148,3 +148,66 @@ int main() {
 
     return 0;
 }
+
+//iska tabulation..
+class Solution {
+public:
+    int climbStairs(int n) {
+
+        // Base cases
+        if (n == 1 || n == 2)
+            return n;
+
+        // Pehle ka Pehla (ways to reach 1st stair)
+        int prev2 = 1;
+
+        // Pehla (ways to reach 2nd stair)
+        int prev1 = 2;
+
+        // Build answers from stair 3 to n
+        for (int i = 3; i <= n; i++) {
+
+            // Current answer
+            int curr = prev1 + prev2;
+
+            // Jo pehle hai woh pehle ka pehla ban jaaye
+            prev2 = prev1;
+
+            // Jo answer hai woh pehla ban jaaye
+            prev1 = curr;
+        }
+
+        // Final answer(So prev1 is always one step ahead, holding the most recent DP value. By the time the loop ends, the most recent value is ways(n), so returning prev1 gives the correct answer.)
+        return prev1;
+    }
+};class Solution {
+public:
+    int climbStairs(int n) {
+
+        // Base cases
+        if (n == 1 || n == 2)
+            return n;
+
+        // Pehle ka Pehla (ways to reach 1st stair)
+        int prev2 = 1;
+
+        // Pehla (ways to reach 2nd stair)
+        int prev1 = 2;
+
+        // Build answers from stair 3 to n
+        for (int i = 3; i <= n; i++) {
+
+            // Current answer
+            int curr = prev1 + prev2;
+
+            // Jo pehle hai woh pehle ka pehla ban jaaye
+            prev2 = prev1;
+
+            // Jo answer hai woh pehla ban jaaye
+            prev1 = curr;
+        }
+
+        // Final answer(So prev1 is always one step ahead, holding the most recent DP value. By the time the loop ends, the most recent value is ways(n), so returning prev1 gives the correct answer.)
+        return prev1;
+    }
+};
